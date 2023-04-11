@@ -1,9 +1,10 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { SideContents } from "../organisms/SideContents";
 
 export const Home = () => {
   return (
-    <Box>
-      <Text>hello</Text>
+    <Box h={"100vh"}>
+      <SideContents />
     </Box>
   );
 };
