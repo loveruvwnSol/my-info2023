@@ -5,7 +5,7 @@ import { DarkModeBtn } from "../atoms/DarkModeBtn";
 
 export const CardContents = () => {
   return (
-    <Box w={"5xl"} h={"xl"} background={"#fff"}>
+    <Box w={"5xl"} h={"xl"} background={"#fff"} boxShadow={"lg"}>
       <DarkModeBtn />
       <CardText />
       <Center mt={10}>
