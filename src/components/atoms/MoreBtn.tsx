@@ -1,15 +1,16 @@
-import { Button } from "@chakra-ui/react";
+import { Button, useColorMode } from "@chakra-ui/react";
 import { BiRightArrow } from "react-icons/bi";
 
 export const MoreBtn = () => {
+  const { colorMode } = useColorMode();
   return (
     <Button
       size={"lg"}
       fontWeight={"bold"}
       rightIcon={<BiRightArrow />}
-      background={"#2F3030"}
+      bg={colorMode === "light" ? "#2F3030" : "#fff"}
       variant="solid"
-      color={"#fff"}
+      color={colorMode === "light" ? "#fff" : "#000"}
       borderRadius={0}
       fontSize={"sm"}
     >
