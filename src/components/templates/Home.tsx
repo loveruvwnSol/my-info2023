@@ -1,10 +1,10 @@
-import { Box } from "@chakra-ui/react";
-import { SideContents } from "../organisms/SideContents";
+import { Center } from "@chakra-ui/react";
+import { CardContents } from "../organisms/CardContents";
 
 export const Home = () => {
   return (
-    <Box h={"100vh"}>
-      <SideContents />
-    </Box>
+    <Center h="100vh" background={"#F3F3F2"}>
+      <CardContents />
+    </Center>
   );
 };
