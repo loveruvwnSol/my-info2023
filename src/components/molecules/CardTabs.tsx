@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { CardTabOne } from "../atoms/CardTabOne";
 import { CardTabTwo } from "../atoms/CardTabTwo";
+import { CardTabThree } from "../atoms/CardThree";
 
 export const CardTabs = () => {
   const { colorMode } = useColorMode();
@@ -49,7 +50,9 @@ export const CardTabs = () => {
         <TabPanel>
           <CardTabTwo />
         </TabPanel>
-        <TabPanel>{/* <p>three!</p> */}</TabPanel>
+        <TabPanel>
+          <CardTabThree />
+        </TabPanel>
       </TabPanels>
     </Tabs>
   );
