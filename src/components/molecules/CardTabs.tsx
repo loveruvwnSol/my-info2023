@@ -13,7 +13,11 @@ import { CardTabThree } from "../atoms/CardThree";
 export const CardTabs = () => {
   const { colorMode } = useColorMode();
   return (
-    <Tabs position="relative" variant="unstyled" ml={14}>
+    <Tabs
+      position="relative"
+      variant="unstyled"
+      ml={{ base: 7, md: 14, lg: 14 }}
+    >
       <TabList>
         <Tab
           color={"#939794"}

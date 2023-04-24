@@ -26,17 +26,21 @@ export const CardText = () => {
     <>
       <HStack
         display="flex"
-        justifyContent="space-between"
-        ml={20}
+        justifyContent={{
+          base: "center",
+          md: "space-between",
+          lg: "space-between",
+        }}
+        ml={{ base: 5, md: 20, lg: 20 }}
         mt={10}
-        mr={20}
+        mr={{ base: 5, md: 20, lg: 20 }}
       >
         <HStack>
-          <Avatar size={"2xl"} src={MyIcon} />
+          <Avatar size={{ base: "lg", md: "2xl", lg: "2xl" }} src={MyIcon} />
           <Box>
             <Text
               color={colorMode === "light" ? "#2F3030" : "#fff"}
-              fontSize={"3xl"}
+              fontSize={{ base: "lg", md: "3xl", lg: "3xl" }}
               fontWeight="bold"
               ml={3}
             >
@@ -46,7 +50,7 @@ export const CardText = () => {
               mt={1}
               color={"#939794"}
               fontWeight={"bold"}
-              fontSize={"sm"}
+              fontSize={{ base: "1px", md: "sm", lg: "sm" }}
               ml={3}
             >
               ISC student ・ Web developer

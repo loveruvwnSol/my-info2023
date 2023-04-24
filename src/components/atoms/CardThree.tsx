@@ -32,16 +32,17 @@ export const CardTabThree = () => {
   };
 
   return (
-    <Box maxW="64rem">
+    <Box maxW="64rem" mt={{ base: 3, md: "unset", lg: "unset" }} mr={10}>
       <Input
         variant="outline"
         placeholder="name"
         bg={colorMode === "light" ? "#fff" : "#2F3030"}
-        w={72}
+        w={{ base: 56, md: 72, lg: 72 }}
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <Textarea
+        h={{ base: "36", md: "unset", lg: "unset" }}
         placeholder="input text"
         bg={colorMode === "light" ? "#fff" : "#2F3030"}
         mt={5}

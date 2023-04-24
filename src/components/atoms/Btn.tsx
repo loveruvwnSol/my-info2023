@@ -11,7 +11,7 @@ export const Btn: React.FC<BtnProps> = ({ text, icon, onClick }) => {
   const { colorMode } = useColorMode();
   return (
     <Button
-      size={"lg"}
+      size={{ base: "md", md: "lg", lg: "lg" }}
       fontWeight={"bold"}
       rightIcon={<Icon as={icon} />}
       bg={colorMode === "light" ? "#2F3030" : "#fff"}

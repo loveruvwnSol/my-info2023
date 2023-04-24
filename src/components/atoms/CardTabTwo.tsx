@@ -1,4 +1,11 @@
-import { Box, Grid, Heading, Image, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Grid,
+  Heading,
+  Image,
+  useColorMode,
+} from "@chakra-ui/react";
 import WebImage1 from "../../images/WebImage1.png";
 import WebImage2 from "../../images/WebImage2.png";
 import WebImage3 from "../../images/WebImage3.png";
@@ -8,12 +15,30 @@ export const CardTabTwo = () => {
   const ImagesInfo = [WebImage1, WebImage2, WebImage3];
   return (
     <Box maxW="64rem">
-      <Heading color={colorMode === "light" ? "#2F3030" : "#fff"} mb={4}>
+      <Heading
+        color={colorMode === "light" ? "#2F3030" : "#fff"}
+        mb={4}
+        fontSize={{ base: "lg", md: "unset", lg: "unset" }}
+      >
         Activity
       </Heading>
-      <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+      <Grid
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(3, 1fr)",
+          lg: "repeat(3, 1fr)",
+        }}
+        gap={6}
+      >
         {ImagesInfo.map((e, idx) => (
-          <Image key={idx} boxShadow="lg" w={72} src={e} />
+          <Center>
+            <Image
+              key={idx}
+              boxShadow="lg"
+              w={{ base: 36, md: 72, lg: 72 }}
+              src={e}
+            />
+          </Center>
         ))}
       </Grid>
     </Box>

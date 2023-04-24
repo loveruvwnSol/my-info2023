@@ -7,7 +7,7 @@ export const CardContents = () => {
   const { colorMode } = useColorMode();
   return (
     <Box
-      w={"5xl"}
+      w={{ base: "80", sm: "xl", md: "2xl", lg: "5xl" }}
       h={"xl"}
       background={colorMode === "light" ? "#fff" : "#000"}
       boxShadow={"lg"}

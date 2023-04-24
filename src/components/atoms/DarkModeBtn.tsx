@@ -5,7 +5,7 @@ import { IoMdMoon } from "react-icons/io";
 export const DarkModeBtn = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box display={"flex"} justifyContent="right" mt={3} mr={3}>
+    <Box display={"flex"} justifyContent={"right"} mt={3} mr={3}>
       <IconButton
         background={colorMode === "light" ? "#fff" : "#000"}
         aria-label="dark mode"
