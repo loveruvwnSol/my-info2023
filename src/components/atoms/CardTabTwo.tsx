@@ -18,7 +18,7 @@ export const CardTabTwo = () => {
       <Heading
         color={colorMode === "light" ? "#2F3030" : "#fff"}
         mb={4}
-        fontSize={{ base: "lg", md: "unset", lg: "unset" }}
+        fontSize={{ base: "lg", md: "2xl", lg: "4xl" }}
       >
         Activity
       </Heading>
